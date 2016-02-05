@@ -9,17 +9,14 @@ public class DrawLine : MonoBehaviour
     private List<Vector3> pointsList;
     private Vector3 mousePos;
 
-    // Structure for line points
     struct myLine
     {
         public Vector3 startPoint;
         public Vector3 endPoint;
     };
 
-
     void Awake()
     {
-        // Create line renderer component and set its property
         line = gameObject.AddComponent<LineRenderer>();
         line.material = new Material(Shader.Find("Particles/Additive"));
         line.SetVertexCount(0);
@@ -32,7 +29,6 @@ public class DrawLine : MonoBehaviour
 	
     void Update()
     {
-        // If mouse button down, remove old line and set its color to green
         if (Input.GetMouseButtonDown(0))
         {
             mousePress = true;
@@ -42,7 +38,6 @@ public class DrawLine : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0)) { mousePress = false; }
 
-        // Drawing line when mouse is moving(presses)
         if (mousePress)
         {
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -62,10 +57,6 @@ public class DrawLine : MonoBehaviour
         }
     }//end update
 
-
-    //	-----------------------------------	
-    //  Following method checks is currentLine(line drawn by last two points) collided with line 
-    //	-----------------------------------	
     private bool lineCollider()
     {
         if (pointsList.Count < 2) { return false; }
@@ -94,16 +85,8 @@ public class DrawLine : MonoBehaviour
         return false;
     }//end line collider
 
-
-    //	-----------------------------------	
-    //	Following method checks whether given two points are same or not
-    //	-----------------------------------	
     private bool checkPoints(Vector3 pointA, Vector3 pointB) { return (pointA.x == pointB.x && pointA.y == pointB.y); }
 
-
-    //	-----------------------------------	
-    //	Following method checks whether given two line intersect or not
-    //	-----------------------------------	
     private bool intersection(myLine L1, myLine L2)
     {
         if (checkPoints(L1.startPoint, L2.startPoint) ||
