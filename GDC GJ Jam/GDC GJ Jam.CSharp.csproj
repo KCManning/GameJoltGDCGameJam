@@ -64,17 +64,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Drawing Scripts\DrawLine.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\Player Scrips\CameraFollowPlayer.cs" />
-    <Compile Include="Assets\Scripts\Player Scrips\PlayerMovement.cs" />
-=======
     <Compile Include="Assets\Scripts\Level Manager\Scene_Manager.cs" />
     <Compile Include="Assets\Scripts\Menus\Credits_Click.cs" />
     <Compile Include="Assets\Scripts\Menus\Quit_Click.cs" />
     <Compile Include="Assets\Scripts\Menus\Start_Click.cs" />
     <Compile Include="Assets\Scripts\Menus\Story_Click.cs" />
     <Compile Include="Assets\Scripts\Menus\Tut_Click.cs" />
->>>>>>> origin/master
+    <Compile Include="Assets\Scripts\Player Scrips\CameraFollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\Player Scrips\PlayerMovement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
