@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Drawing TEST.unity
+- path: Assets/Start Menu.unity
   isLoaded: 1
   isActive: 0
 - path: Assets/Scenes/Main Game.unity
