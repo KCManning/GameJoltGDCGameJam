@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Menus\Tut_Click.cs" />
     <Compile Include="Assets\Scripts\Player Scrips\CameraFollowPlayer.cs" />
     <Compile Include="Assets\Scripts\Player Scrips\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\TutorialManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
