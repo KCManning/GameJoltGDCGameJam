@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour {
     bool canJump = false;
     Quaternion originalRotation;
     bool isOnGround = false;
+    float RelativeX = 0;
     public float speed;
 	// Use this for initialization
 	void Start () {
@@ -14,8 +15,8 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float RelativeX = 0;
 
+        bool noKey = true;
         //get rigid body
         Rigidbody body = GetComponent<Rigidbody>();
         
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour {
             Vector3 up = new Vector3(0, 1, 0);
             body.AddForce(up * 300, ForceMode.Acceleration);
             canJump = false;
+            
 
         }
         if(Input.GetKey(KeyCode.A)&& isOnGround)
@@ -33,8 +35,7 @@ public class PlayerMovement : MonoBehaviour {
             //rotate the player
             transform.rotation = originalRotation;
             transform.Rotate(new Vector3(0, 0, 180));
-            
-
+            noKey = false;
         }
         
 
@@ -45,11 +46,24 @@ public class PlayerMovement : MonoBehaviour {
             //rotate the player
             transform.rotation = originalRotation;
             //transform.Rotate(new Vector3(0, 0, 0));
+            noKey = false;
+        }
+
+        if(noKey && isOnGround)
+        {
+            //set the relative x to 0
+            RelativeX = 0;
         }
 
         Vector3 newVector = transform.position;
         newVector.x += RelativeX;
         transform.position = newVector;
+
+        //make sure the player does not fall infinitly
+        if(transform.position.y < -10)
+        {
+            teleToSpawn();
+        }
 
 	}
 
