@@ -2,8 +2,10 @@
 using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
-    bool canJump;
+    bool canJump = false;
     Quaternion originalRotation;
+    bool isOnGround = false;
+    public float speed;
 	// Use this for initialization
 	void Start () {
         //set the original transformation
@@ -12,6 +14,7 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        float RelativeX = 0;
 
         //get rigid body
         Rigidbody body = GetComponent<Rigidbody>();
@@ -24,34 +27,30 @@ public class PlayerMovement : MonoBehaviour {
             canJump = false;
 
         }
-        float newXVel = 0;
-        if(Input.GetKey(KeyCode.A))
+        if(Input.GetKey(KeyCode.A)&& isOnGround)
         {
-            newXVel = -15;
+            RelativeX = -speed;
             //rotate the player
             transform.rotation = originalRotation;
             transform.Rotate(new Vector3(0, 0, 180));
             
 
         }
+        
 
-        if(Input.GetKey(KeyCode.D))
+        if(Input.GetKey(KeyCode.D)&& isOnGround)
         {
-            newXVel = 15;
+            RelativeX = speed;
             //rotate the player
             //rotate the player
             transform.rotation = originalRotation;
             //transform.Rotate(new Vector3(0, 0, 0));
         }
 
-        //apply motion
-        Vector3 newVelocity = body.velocity;
-        newVelocity.x = newXVel;
-        body.velocity = newVelocity;
-        if(transform.position.y < -10)
-        {
-            teleToSpawn();
-        }
+        Vector3 newVector = transform.position;
+        newVector.x += RelativeX;
+        transform.position = newVector;
+
 	}
 
     void OnCollisionEnter(Collision col)
@@ -59,6 +58,7 @@ public class PlayerMovement : MonoBehaviour {
         if(col.collider.tag =="JumpableSurface")
         {
             canJump = true;
+            isOnGround = true;
         }
     }
 
@@ -68,6 +68,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             //player is no longer colliding with the ground so prevent him from jumping
             canJump = false;
+            isOnGround = false;
         }
     }
 
