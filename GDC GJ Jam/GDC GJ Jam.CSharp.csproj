@@ -67,11 +67,8 @@
     <Compile Include="Assets\Scripts\Enemy Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\ThirdPersonCharacter.cs" />
     <Compile Include="Assets\Scripts\Level Manager\Scene_Manager.cs" />
-    <Compile Include="Assets\Scripts\Menus\Credits_Click.cs" />
-    <Compile Include="Assets\Scripts\Menus\Quit_Click.cs" />
-    <Compile Include="Assets\Scripts\Menus\Start_Click.cs" />
-    <Compile Include="Assets\Scripts\Menus\Story_Click.cs" />
-    <Compile Include="Assets\Scripts\Menus\Tut_Click.cs" />
+    <Compile Include="Assets\Scripts\Menus\HUD_Health.cs" />
+    <Compile Include="Assets\Scripts\Menus\ReturnHome.cs" />
     <Compile Include="Assets\Scripts\Player Scrips\CameraFollowPlayer.cs" />
     <Compile Include="Assets\Scripts\Player Scrips\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\TutorialManager.cs" />

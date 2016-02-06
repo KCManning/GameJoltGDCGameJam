@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour {
         if(canJump && Input.GetKey(KeyCode.Space))
         {
             Vector3 up = new Vector3(0, 1, 0);
-            body.AddForce(up * 300, ForceMode.Acceleration);
+            body.AddForce(up * 200, ForceMode.Acceleration);
             canJump = false;
             
 
