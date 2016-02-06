@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8633a374de2cb0a4fba904a88f3cb7b8
-timeCreated: 1454736837
+timeCreated: 1454738108
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -1337,7 +1337,7 @@ ModelImporter:
   copyAvatar: 0
   humanDescription:
     human:
-    - boneName: root
+    - boneName: ORG-hips
       humanName: Hips
       limit:
         min: {x: 0, y: 0, z: 0}
