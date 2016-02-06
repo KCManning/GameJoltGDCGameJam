@@ -6,7 +6,9 @@ public class PlayerMovement : MonoBehaviour {
     Quaternion originalRotation;
     bool isOnGround = false;
     float RelativeX = 0;
+    float RelativeZ = 0;
     public float speed;
+    public float max_z;
 	// Use this for initialization
 	void Start () {
         //set the original transformation
@@ -20,6 +22,7 @@ public class PlayerMovement : MonoBehaviour {
 	void Update () {
 
         bool noKey = true;
+        bool noRightKey = true;
         //get rigid body
         Rigidbody body = GetComponent<Rigidbody>();
         
@@ -58,9 +61,7 @@ public class PlayerMovement : MonoBehaviour {
             RelativeX = 0;
         }
 
-        Vector3 newVector = transform.position;
-        newVector.x += RelativeX;
-        transform.position = newVector;
+        
 
         //make sure the player does not fall infinitly
         if(transform.position.y < -10)
@@ -68,9 +69,47 @@ public class PlayerMovement : MonoBehaviour {
             teleToSpawn();
         }
 
+        //move the player by the zcoord
+        if (Input.GetKey(KeyCode.S) && isOnGround)
+        {
+            RelativeZ = -speed;
+            //rotate the player
+            noRightKey = false;
+        }
+
+
+        if (Input.GetKey(KeyCode.W) && isOnGround)
+        {
+            RelativeZ = speed;
+            //rotate the player
+            //rotate the player
+            noRightKey = false;
+        }
+
+        if(isOnGround && noRightKey)
+        {
+            RelativeZ = 0;
+        }
         
 
-	}
+
+        if (transform.position.z < -max_z)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -max_z);
+        }
+        else if (transform.position.z > max_z)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, max_z);
+        }
+
+        Vector3 newVector = transform.position;
+        newVector.x += RelativeX;
+        newVector.z += RelativeZ;
+        transform.position = newVector;
+
+
+
+    }
 
     void OnCollisionEnter(Collision col)
     {
@@ -97,4 +136,5 @@ public class PlayerMovement : MonoBehaviour {
         Vector3 spawnPos = GameObject.Find("Player Spawn").transform.position;
         transform.position = spawnPos;
     }
+
 }
