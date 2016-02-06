@@ -8,6 +8,7 @@ public class AICharacterControl : MonoBehaviour
      public NavMeshAgent agent { get; private set; }             // the navmesh agent required for the path finding
      public ThirdPersonCharacter character { get; private set; } // the character we are controlling
      public Transform target;                                    // target to aim for
+    private float damage;
 
 
      private void Start()
@@ -37,4 +38,21 @@ public class AICharacterControl : MonoBehaviour
      {
          this.target = target;
      }
+
+    public void Attack(GameObject obj)
+    {
+
+    }
+
+    public void StrikeCurrentTarget(float dmg)
+    {
+        if (target)
+        {
+            Health health = target.GetComponent<Health>();
+            if(health) { health.DealDamage(dmg); }
+
+        }
+        
+    }
+
  }
