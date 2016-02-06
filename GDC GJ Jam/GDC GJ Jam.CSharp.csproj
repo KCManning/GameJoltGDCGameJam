@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Drawing Scripts\DrawLine.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\AICharacterControl.cs" />
+    <Compile Include="Assets\Scripts\Enemy Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\Enemy Scripts\ThirdPersonCharacter.cs" />
     <Compile Include="Assets\Scripts\Level Manager\Scene_Manager.cs" />
     <Compile Include="Assets\Scripts\Menus\Credits_Click.cs" />
