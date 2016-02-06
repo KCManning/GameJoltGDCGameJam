@@ -324,6 +324,7 @@ ModelImporter:
     100632: WGT-VIS-upper_arm_pole_ik_L
     100634: WGT-VIS-upper_arm_pole_ik_R
     100636: Joe
+    100638: Joe2
     400000: chest
     400002: Cube
     400004: DEF-chest
@@ -643,6 +644,7 @@ ModelImporter:
     400632: WGT-VIS-upper_arm_pole_ik_L
     400634: WGT-VIS-upper_arm_pole_ik_R
     400636: Joe
+    400638: Joe2
     2300000: WGT-chest
     2300002: WGT-elbow_hose_L
     2300004: WGT-elbow_hose_R
@@ -954,10 +956,12 @@ ModelImporter:
     4300204: WGT-torso
     4300206: Cube
     4300208: Joe
+    4300210: Joe2
     7400000: Default Take
     9500000: //RootNode
     13700000: Cube
     13700002: Joe
+    13700004: Joe2
   materials:
     importMaterials: 1
     materialName: 0
