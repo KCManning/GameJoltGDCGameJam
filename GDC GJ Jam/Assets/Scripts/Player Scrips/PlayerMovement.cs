@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour {
         originalRotation = transform.rotation;
 
         Animator ani = GetComponent<Animator>();
-        ani.Play("Walking");
+        ani.Play("Defualt");
 	}
 	
 	// Update is called once per frame
