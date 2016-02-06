@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour {
 	void Start () {
         //set the original transformation
         originalRotation = transform.rotation;
+
+        Animator ani = GetComponent<Animator>();
+        ani.Play("Walking");
 	}
 	
 	// Update is called once per frame
@@ -64,6 +67,8 @@ public class PlayerMovement : MonoBehaviour {
         {
             teleToSpawn();
         }
+
+        
 
 	}
 
