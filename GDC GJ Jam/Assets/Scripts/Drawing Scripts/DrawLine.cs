@@ -9,6 +9,11 @@ public class DrawLine : MonoBehaviour
     private List<Vector3> pointsList;
     private Vector3 mousePos;
 
+    public int sword, long_sword, halberd;
+
+    public enum Pattern { none, sword, long_sword, halberd, dual_wield, hammer, scythe}
+    private Pattern weapon;
+
     struct myLine
     {
         public Vector3 startPoint;
@@ -36,7 +41,12 @@ public class DrawLine : MonoBehaviour
             pointsList.RemoveRange(0, pointsList.Count);
             line.SetColors(Color.green, Color.green);
         }
-        else if (Input.GetMouseButtonUp(0)) { mousePress = false; }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            mousePress = false;
+            
+            setWeapon(pointsList[0].x, pointsList[pointsList.Count - 1].x);
+        }
 
         if (mousePress)
         {
@@ -101,4 +111,29 @@ public class DrawLine : MonoBehaviour
                (Mathf.Max(L2.startPoint.y, L2.endPoint.y) >= Mathf.Min(L1.startPoint.y, L1.endPoint.y))
                );
     }
+
+    private void setWeapon(double firstX, double secondX)
+    {
+        if (lineCollider()) { weapon = Pattern.dual_wield; }
+        else
+        {
+            double difference = secondX - firstX;
+
+            if(difference < long_sword) { weapon = Pattern.sword; }
+            else if (difference < halberd) { weapon = Pattern.long_sword; }
+            else if (difference >= halberd) { weapon = Pattern.halberd; }
+            else { weapon = Pattern.none; }
+
+        }
+
+        print(weapon.ToString());//***
+    }
+
+    public Pattern getWeapon(int firstX, int secondX)
+    {
+
+
+        return weapon;
+    }
+
 }

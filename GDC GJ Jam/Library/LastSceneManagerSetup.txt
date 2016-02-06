@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Main Game.unity
+=======
+- path: Assets/Scenes/Drawing TEST.unity
+>>>>>>> origin/master
   isLoaded: 1
   isActive: 1
