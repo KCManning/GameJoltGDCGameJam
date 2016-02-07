@@ -16,4 +16,13 @@ public class Weapon_Script : MonoBehaviour {
         Transform hand = ani.GetBoneTransform(HumanBodyBones.LeftHand);
         transform.position = hand.position;
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Enemy")
+        {
+            //write out collided with enemy
+            print("Collided with enemy");
+        }
+    }
 }
