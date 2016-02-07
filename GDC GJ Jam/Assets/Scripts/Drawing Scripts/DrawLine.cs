@@ -8,6 +8,9 @@ public class DrawLine : MonoBehaviour
     private bool mousePress;
     private List<Vector3> pointsList;
     private Vector3 mousePos;
+    private GameObject playerSword;
+    private GameObject secondSword;
+    private GameObject playerHalberd;
 
     public int sword, long_sword, halberd;
 
@@ -30,6 +33,10 @@ public class DrawLine : MonoBehaviour
         line.useWorldSpace = true;
         mousePress = false;
         pointsList = new List<Vector3>();
+        weapon = Pattern.long_sword;
+        playerSword = GameObject.Find("First_Sword");
+        secondSword = GameObject.Find("Second_Sword");
+        playerHalberd = GameObject.Find("Halberd");
     }//end Awake
 	
     void Update()
@@ -69,6 +76,19 @@ public class DrawLine : MonoBehaviour
             }
         }
         cam.orthographic = false;
+
+        //reanable and disable according weapons
+        playerHalberd.SetActive(weapon == Pattern.halberd);
+        secondSword.SetActive(weapon == Pattern.dual_wield);
+        GameObject sword = playerSword;
+        sword.SetActive(weapon == Pattern.dual_wield || weapon == Pattern.sword);
+        sword.transform.localScale = new Vector3(0.0025f, 0.0025f, 0.0025f);
+        if (weapon == Pattern.long_sword)
+        {
+            
+            sword.SetActive(true);
+            sword.transform.localScale = new Vector3(0.0025f, 0.0035f, 0.0025f);
+        }
     }//end update
 
     private bool lineCollider()
