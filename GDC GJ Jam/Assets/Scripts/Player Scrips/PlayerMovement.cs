@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public float max_z;
     public static bool isAttacking = false;
+    public static float sand = 100;
     // Use this for initialization
     void Start()
     {
@@ -144,6 +145,25 @@ public class PlayerMovement : MonoBehaviour
         newVector.x += RelativeX;
         newVector.z += RelativeZ;
         transform.position = newVector;
+
+        //update sand amounts
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            sand -= 10;
+            if(sand < 0)
+            {
+                sand = 0;
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            sand += 10;
+        }
+
+        //update particle system opacity and speed to match the sand
+        ParticleSystem system = GetComponent<ParticleSystem>();
+        system.startColor = new Color(system.startColor.r, system.startColor.g, system.startColor.b, sand / 100);
 
 
 

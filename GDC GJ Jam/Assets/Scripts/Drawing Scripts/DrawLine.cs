@@ -89,6 +89,21 @@ public class DrawLine : MonoBehaviour
             sword.SetActive(true);
             sword.transform.localScale = new Vector3(0.0025f, 0.0035f, 0.0025f);
         }
+
+        //set the sword transparency
+        Renderer rende = playerSword.GetComponent<Renderer>();
+        rende.material.color = new Color(rende.material.color.r, rende.material.color.g, rende.material.color.b
+            , PlayerMovement.sand / 100);
+
+        rende = secondSword.GetComponent<Renderer>();
+        rende.material.color = new Color(rende.material.color.r, rende.material.color.g, rende.material.color.b
+            , PlayerMovement.sand / 100);
+
+        rende = playerHalberd.GetComponent<Renderer>();
+        rende.material.color = new Color(rende.material.color.r, rende.material.color.g, rende.material.color.b
+            , PlayerMovement.sand / 100);
+
+
     }//end update
 
     private bool lineCollider()
