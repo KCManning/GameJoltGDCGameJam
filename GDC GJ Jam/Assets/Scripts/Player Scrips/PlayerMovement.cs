@@ -1,32 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
     //bool canJump = false;
     Quaternion originalRotation;
-   // bool isOnGround = false;
+    // bool isOnGround = false;
     float RelativeX = 0;
     float RelativeZ = 0;
     public float speed;
     public float max_z;
-
-    Animator ani;
-
-    static private bool foot;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         //set the original transformation
         originalRotation = transform.rotation;
 
         Animator ani = GetComponent<Animator>();
         ani.Play("Default");
-        foot = true;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
 
-        bool canJump = Physics.Raycast(transform.position, Vector3.down,0.2f);
+    // Update is called once per frame
+    void Update()
+    {
+
+
+
+        bool canJump = Physics.Raycast(transform.position, Vector3.down, 0.2f);
         //Debug.DrawRay(transform.position, Vector3.down*10,Color.green);
         bool isOnGround = canJump;
 
@@ -35,18 +35,21 @@ public class PlayerMovement : MonoBehaviour {
         //get rigid body
         Rigidbody body = GetComponent<Rigidbody>();
 
-        if(Input.GetKey(KeyCode.A)&& isOnGround)
+        Animator ani = GetComponent<Animator>();
+        if (Input.GetKey(KeyCode.A) && isOnGround)
         {
             RelativeX = -speed;
             //rotate the player
             transform.rotation = originalRotation;
             transform.Rotate(new Vector3(0, 180, 0));
             noKey = false;
-            walking();
-        }
-        
+            ani.SetBool("Walking", true);
 
-        if(Input.GetKey(KeyCode.D)&& isOnGround)
+
+        }
+
+
+        if (Input.GetKey(KeyCode.D) && isOnGround)
         {
             RelativeX = speed;
             //rotate the player
@@ -54,7 +57,7 @@ public class PlayerMovement : MonoBehaviour {
             transform.rotation = originalRotation;
             //transform.Rotate(new Vector3(0, 0, 0));
             noKey = false;
-            walking();
+            ani.SetBool("Walking", true);
 
         }
 
@@ -64,8 +67,8 @@ public class PlayerMovement : MonoBehaviour {
             Vector3 up = new Vector3(0, 1, 0);
             body.AddForce(up * 250, ForceMode.Acceleration);
             canJump = false;
-            ani.Play("Jumping");
-            //ani.SetBool("Walking", false);
+            ani.SetBool("Jumping", true);
+            ani.SetBool("Walking", false);
 
 
         }
@@ -76,10 +79,10 @@ public class PlayerMovement : MonoBehaviour {
             RelativeX = 0;
         }
 
-        
+
 
         //make sure the player does not fall infinitly
-        if(transform.position.y < -10)
+        if (transform.position.y < -10)
         {
             teleToSpawn();
         }
@@ -101,12 +104,12 @@ public class PlayerMovement : MonoBehaviour {
             noRightKey = false;
         }
 
-        if(isOnGround && noRightKey)
+        if (isOnGround && noRightKey)
         {
             RelativeZ = 0;
             //ani.SetBool("Idle", true);
         }
-        
+
 
 
         if (transform.position.z < -max_z)
@@ -127,36 +130,22 @@ public class PlayerMovement : MonoBehaviour {
 
     }
 
-    void walking()
-    {
-        if (foot)
-        {
-            ani.Play("RightStep");
-            foot = false;
-        }
-        else
-        {
-            ani.Play("LeftStep");
-            foot = true;
-        }
-    }
-
     void OnCollisionEnter(Collision col)
     {
-        if(col.collider.tag =="JumpableSurface")
+        if (col.collider.tag == "JumpableSurface")
         {
-      //      canJump = true;
-        //    isOnGround = true;
+            //      canJump = true;
+            //    isOnGround = true;
         }
     }
 
     void OnCollisionExit(Collision col)
     {
-        if(col.collider.tag == "JumpableSurface")
+        if (col.collider.tag == "JumpableSurface")
         {
             //player is no longer colliding with the ground so prevent him from jumping
-        //    canJump = false;
-           // isOnGround = false;
+            //    canJump = false;
+            // isOnGround = false;
         }
     }
 
@@ -168,3 +157,4 @@ public class PlayerMovement : MonoBehaviour {
     }
 
 }
+
