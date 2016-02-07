@@ -34,6 +34,9 @@ public class DrawLine : MonoBehaviour
 	
     void Update()
     {
+        Camera cam = GetComponent<Camera>();
+        //enable ortho drawing
+        cam.orthographic = true;
         if (Input.GetMouseButtonDown(0))
         {
             mousePress = true;
@@ -65,6 +68,7 @@ public class DrawLine : MonoBehaviour
                 }
             }
         }
+        cam.orthographic = false;
     }//end update
 
     private bool lineCollider()

@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     float RelativeZ = 0;
     public float speed;
     public float max_z;
+    public static bool isAttacking = false;
     // Use this for initialization
     void Start()
     {
@@ -46,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
             ani.SetBool("Running", true);
             ani.SetBool("Jumping", false);
             ani.SetBool("Attacking", false);
-
+            isAttacking = false;
         }
 
 
@@ -61,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
             ani.SetBool("Running", true);
             ani.SetBool("Jumping", false);
             ani.SetBool("Attacking", false);
+            isAttacking = false;
         }
 
 
@@ -71,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
             RelativeX = 0;
             ani.SetBool("Jumping", false);
             ani.SetBool("Running", false);
-            
+            isAttacking = false;
         }
 
 
@@ -83,7 +85,8 @@ public class PlayerMovement : MonoBehaviour
             canJump = false;
             ani.SetBool("Jumping", true);
             ani.SetBool("Running", false);
-
+            ani.SetBool("Attacking", false);
+            isAttacking = false;
 
         }
 
@@ -93,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
             ani.SetBool("Attacking",true);
             ani.SetBool("Running", false);
             ani.SetBool("Jumping", false);
-
+            isAttacking = true;
         }
 
 
