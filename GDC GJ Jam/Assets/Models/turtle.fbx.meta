@@ -102,6 +102,8 @@ ModelImporter:
     4300000: Tortoise
     7400000: Armature|ArmatureAction
     7400002: Armature|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+    7400004: Armature|Death
+    7400006: Armature|Death.001
     9500000: //RootNode
     13700000: Tortoise
   materials:
@@ -124,7 +126,373 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+      takeName: Armature|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body
+        weight: 1
+      - path: Armature/body/lower_neck
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end/l_jaw_end_end
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end/u_jaw_end_end
+        weight: 1
+      - path: Armature/f_IK.L
+        weight: 1
+      - path: Armature/f_IK.L/f_foot.L
+        weight: 1
+      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end
+        weight: 1
+      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end/f_foot.L_end_end
+        weight: 1
+      - path: Armature/f_IK.R
+        weight: 1
+      - path: Armature/f_IK.R/f_foot.R
+        weight: 1
+      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end
+        weight: 1
+      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end/f_foot.R_end_end
+        weight: 1
+      - path: Armature/f_leg.L
+        weight: 1
+      - path: Armature/f_leg.L/f_leg.L_end
+        weight: 1
+      - path: Armature/f_leg.L/f_leg.L_end/f_leg.L_end_end
+        weight: 1
+      - path: Armature/f_leg.R
+        weight: 1
+      - path: Armature/f_leg.R/f_leg.R_end
+        weight: 1
+      - path: Armature/f_leg.R/f_leg.R_end/f_leg.R_end_end
+        weight: 1
+      - path: Armature/r_IK.L
+        weight: 1
+      - path: Armature/r_IK.L/r_foot.L
+        weight: 1
+      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end
+        weight: 1
+      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end/r_foot.L_end_end
+        weight: 1
+      - path: Armature/r_IK.R
+        weight: 1
+      - path: Armature/r_IK.R/r_foot.R
+        weight: 1
+      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end
+        weight: 1
+      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end/r_foot.R_end_end
+        weight: 1
+      - path: Armature/r_leg.L
+        weight: 1
+      - path: Armature/r_leg.L/r_leg.L_end
+        weight: 1
+      - path: Armature/r_leg.L/r_leg.L_end/r_leg.L_end_end
+        weight: 1
+      - path: Armature/r_leg.R
+        weight: 1
+      - path: Armature/r_leg.R/r_leg.R_end
+        weight: 1
+      - path: Armature/r_leg.R/r_leg.R_end/r_leg.R_end_end
+        weight: 1
+      - path: Armature/tail_base
+        weight: 1
+      - path: Armature/tail_base/tail_mid
+        weight: 1
+      - path: Armature/tail_base/tail_mid/tail_tip
+        weight: 1
+      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end
+        weight: 1
+      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end/tail_tip_end_end
+        weight: 1
+      - path: Tortoise
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Death
+      takeName: Armature|Death
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body
+        weight: 1
+      - path: Armature/body/lower_neck
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end/l_jaw_end_end
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end/u_jaw_end_end
+        weight: 1
+      - path: Armature/f_IK.L
+        weight: 1
+      - path: Armature/f_IK.L/f_foot.L
+        weight: 1
+      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end
+        weight: 1
+      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end/f_foot.L_end_end
+        weight: 1
+      - path: Armature/f_IK.R
+        weight: 1
+      - path: Armature/f_IK.R/f_foot.R
+        weight: 1
+      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end
+        weight: 1
+      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end/f_foot.R_end_end
+        weight: 1
+      - path: Armature/f_leg.L
+        weight: 1
+      - path: Armature/f_leg.L/f_leg.L_end
+        weight: 1
+      - path: Armature/f_leg.L/f_leg.L_end/f_leg.L_end_end
+        weight: 1
+      - path: Armature/f_leg.R
+        weight: 1
+      - path: Armature/f_leg.R/f_leg.R_end
+        weight: 1
+      - path: Armature/f_leg.R/f_leg.R_end/f_leg.R_end_end
+        weight: 1
+      - path: Armature/r_IK.L
+        weight: 1
+      - path: Armature/r_IK.L/r_foot.L
+        weight: 1
+      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end
+        weight: 1
+      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end/r_foot.L_end_end
+        weight: 1
+      - path: Armature/r_IK.R
+        weight: 1
+      - path: Armature/r_IK.R/r_foot.R
+        weight: 1
+      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end
+        weight: 1
+      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end/r_foot.R_end_end
+        weight: 1
+      - path: Armature/r_leg.L
+        weight: 1
+      - path: Armature/r_leg.L/r_leg.L_end
+        weight: 1
+      - path: Armature/r_leg.L/r_leg.L_end/r_leg.L_end_end
+        weight: 1
+      - path: Armature/r_leg.R
+        weight: 1
+      - path: Armature/r_leg.R/r_leg.R_end
+        weight: 1
+      - path: Armature/r_leg.R/r_leg.R_end/r_leg.R_end_end
+        weight: 1
+      - path: Armature/tail_base
+        weight: 1
+      - path: Armature/tail_base/tail_mid
+        weight: 1
+      - path: Armature/tail_base/tail_mid/tail_tip
+        weight: 1
+      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end
+        weight: 1
+      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end/tail_tip_end_end
+        weight: 1
+      - path: Tortoise
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Death.001
+      takeName: Armature|Death.001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body
+        weight: 1
+      - path: Armature/body/lower_neck
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end/l_jaw_end_end
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end
+        weight: 1
+      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end/u_jaw_end_end
+        weight: 1
+      - path: Armature/f_IK.L
+        weight: 1
+      - path: Armature/f_IK.L/f_foot.L
+        weight: 1
+      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end
+        weight: 1
+      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end/f_foot.L_end_end
+        weight: 1
+      - path: Armature/f_IK.R
+        weight: 1
+      - path: Armature/f_IK.R/f_foot.R
+        weight: 1
+      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end
+        weight: 1
+      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end/f_foot.R_end_end
+        weight: 1
+      - path: Armature/f_leg.L
+        weight: 1
+      - path: Armature/f_leg.L/f_leg.L_end
+        weight: 1
+      - path: Armature/f_leg.L/f_leg.L_end/f_leg.L_end_end
+        weight: 1
+      - path: Armature/f_leg.R
+        weight: 1
+      - path: Armature/f_leg.R/f_leg.R_end
+        weight: 1
+      - path: Armature/f_leg.R/f_leg.R_end/f_leg.R_end_end
+        weight: 1
+      - path: Armature/r_IK.L
+        weight: 1
+      - path: Armature/r_IK.L/r_foot.L
+        weight: 1
+      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end
+        weight: 1
+      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end/r_foot.L_end_end
+        weight: 1
+      - path: Armature/r_IK.R
+        weight: 1
+      - path: Armature/r_IK.R/r_foot.R
+        weight: 1
+      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end
+        weight: 1
+      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end/r_foot.R_end_end
+        weight: 1
+      - path: Armature/r_leg.L
+        weight: 1
+      - path: Armature/r_leg.L/r_leg.L_end
+        weight: 1
+      - path: Armature/r_leg.L/r_leg.L_end/r_leg.L_end_end
+        weight: 1
+      - path: Armature/r_leg.R
+        weight: 1
+      - path: Armature/r_leg.R/r_leg.R_end
+        weight: 1
+      - path: Armature/r_leg.R/r_leg.R_end/r_leg.R_end_end
+        weight: 1
+      - path: Armature/tail_base
+        weight: 1
+      - path: Armature/tail_base/tail_mid
+        weight: 1
+      - path: Armature/tail_base/tail_mid/tail_tip
+        weight: 1
+      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end
+        weight: 1
+      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end/tail_tip_end_end
+        weight: 1
+      - path: Tortoise
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
