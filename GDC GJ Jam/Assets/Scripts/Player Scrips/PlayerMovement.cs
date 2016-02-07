@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
             noKey = false;
             ani.SetBool("Running", true);
             ani.SetBool("Jumping", false);
-
+            ani.SetBool("Attacking", false);
 
         }
 
@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
             noKey = false;
             ani.SetBool("Running", true);
             ani.SetBool("Jumping", false);
-
+            ani.SetBool("Attacking", false);
         }
 
 
@@ -71,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
             RelativeX = 0;
             ani.SetBool("Jumping", false);
             ani.SetBool("Running", false);
+            
         }
 
 
@@ -83,6 +84,15 @@ public class PlayerMovement : MonoBehaviour
             ani.SetBool("Jumping", true);
             ani.SetBool("Running", false);
 
+
+        }
+
+        if(Input.GetKey(KeyCode.F))
+        {
+            //make the player attack
+            ani.SetBool("Attacking",true);
+            ani.SetBool("Running", false);
+            ani.SetBool("Jumping", false);
 
         }
 
