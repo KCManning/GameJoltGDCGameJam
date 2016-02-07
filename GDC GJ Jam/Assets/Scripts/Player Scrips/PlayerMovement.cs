@@ -9,6 +9,10 @@ public class PlayerMovement : MonoBehaviour {
     float RelativeZ = 0;
     public float speed;
     public float max_z;
+
+    Animator ani;
+
+    static private bool foot;
 	// Use this for initialization
 	void Start () {
         //set the original transformation
@@ -16,13 +20,12 @@ public class PlayerMovement : MonoBehaviour {
 
         Animator ani = GetComponent<Animator>();
         ani.Play("Default");
+        foot = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-
-        
         bool canJump = Physics.Raycast(transform.position, Vector3.down,0.2f);
         //Debug.DrawRay(transform.position, Vector3.down*10,Color.green);
         bool isOnGround = canJump;
@@ -32,7 +35,6 @@ public class PlayerMovement : MonoBehaviour {
         //get rigid body
         Rigidbody body = GetComponent<Rigidbody>();
 
-        Animator ani = GetComponent<Animator>();
         if(Input.GetKey(KeyCode.A)&& isOnGround)
         {
             RelativeX = -speed;
@@ -40,9 +42,7 @@ public class PlayerMovement : MonoBehaviour {
             transform.rotation = originalRotation;
             transform.Rotate(new Vector3(0, 180, 0));
             noKey = false;
-            ani.SetBool("Walking",true);
-
-
+            walking();
         }
         
 
@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour {
             transform.rotation = originalRotation;
             //transform.Rotate(new Vector3(0, 0, 0));
             noKey = false;
-            ani.SetBool("Walking", true);
+            walking();
 
         }
 
@@ -64,8 +64,8 @@ public class PlayerMovement : MonoBehaviour {
             Vector3 up = new Vector3(0, 1, 0);
             body.AddForce(up * 250, ForceMode.Acceleration);
             canJump = false;
-            ani.SetBool("Jumping", true);
-            ani.SetBool("Walking", false);
+            ani.Play("Jumping");
+            //ani.SetBool("Walking", false);
 
 
         }
@@ -125,6 +125,20 @@ public class PlayerMovement : MonoBehaviour {
 
 
 
+    }
+
+    void walking()
+    {
+        if (foot)
+        {
+            ani.Play("RightStep");
+            foot = false;
+        }
+        else
+        {
+            ani.Play("LeftStep");
+            foot = true;
+        }
     }
 
     void OnCollisionEnter(Collision col)
