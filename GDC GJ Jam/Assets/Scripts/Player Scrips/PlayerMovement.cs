@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
             transform.Rotate(new Vector3(0, 180, 0));
             noKey = false;
             ani.SetBool("Running", true);
+            ani.SetBool("Jumping", false);
 
 
         }
@@ -58,8 +59,20 @@ public class PlayerMovement : MonoBehaviour
             //transform.Rotate(new Vector3(0, 0, 0));
             noKey = false;
             ani.SetBool("Running", true);
+            ani.SetBool("Jumping", false);
 
         }
+
+
+
+        if (noKey && isOnGround)
+        {
+            //set the relative x to 0
+            RelativeX = 0;
+            ani.SetBool("Jumping", false);
+            ani.SetBool("Running", false);
+        }
+
 
         //check to see if the player can jump
         if (canJump && Input.GetKey(KeyCode.Space))
@@ -72,13 +85,6 @@ public class PlayerMovement : MonoBehaviour
 
 
         }
-
-        if (noKey && isOnGround)
-        {
-            //set the relative x to 0
-            RelativeX = 0;
-        }
-
 
 
         //make sure the player does not fall infinitly
