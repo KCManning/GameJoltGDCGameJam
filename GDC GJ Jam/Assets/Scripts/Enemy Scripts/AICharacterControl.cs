@@ -10,12 +10,7 @@ public class AICharacterControl : MonoBehaviour
      public Transform target;      
      // target to aim for
     private float damage;
-     public class EnemyInfo
-    {
-        public float damage;
-        public float health;
-    }
-
+    public float health;
      private void Start()
      {
          // get the components on the object we need ( should not be null due to require component so no need to check )
@@ -29,6 +24,12 @@ public class AICharacterControl : MonoBehaviour
 
      private void Update()
      {
+        if (health < 0)
+        {
+            tag = "DeadEnemy";
+            return;
+        }
+            
          if (target != null)
              agent.SetDestination(target.position);
 
@@ -58,6 +59,28 @@ public class AICharacterControl : MonoBehaviour
 
         }
         
+    }
+
+    public void OnCollisionEnter(Collision info)
+    {
+        if(info.collider.tag == "Weapon")
+        {
+            Animator ani = GetComponent<Animator>();
+            ani.SetFloat("Health", -1);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Weapon")
+        {
+            Animator ani = GetComponent<Animator>();
+            ani.SetFloat("Health", health);
+            Rigidbody body = null;
+            health -= 50;
+            ani.SetFloat("Health", health);
+
+        }
     }
 
  }

@@ -166,7 +166,8 @@ public class PlayerMovement : MonoBehaviour
         system.startColor = new Color(system.startColor.r, system.startColor.g, system.startColor.b, sand / 100);
 
 
-
+        //set sand var in animation
+        ani.SetFloat("Sand", sand);
     }
 
     void OnCollisionEnter(Collision col)
