@@ -171,10 +171,11 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.collider.tag == "JumpableSurface")
+        if (col.collider.tag == "Enemy")
         {
-            //      canJump = true;
-            //    isOnGround = true;
+
+            //destroy some of the players sand
+            sand -= sand * 0.05f;
         }
     }
 
