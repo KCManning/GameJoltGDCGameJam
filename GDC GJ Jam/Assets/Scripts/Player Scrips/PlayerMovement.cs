@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = originalRotation;
             transform.Rotate(new Vector3(0, 180, 0));
             noKey = false;
-            ani.SetBool("Walking", true);
+            ani.SetBool("Running", true);
 
 
         }
@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = originalRotation;
             //transform.Rotate(new Vector3(0, 0, 0));
             noKey = false;
-            ani.SetBool("Walking", true);
+            ani.SetBool("Running", true);
 
         }
 
@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
             body.AddForce(up * 250, ForceMode.Acceleration);
             canJump = false;
             ani.SetBool("Jumping", true);
-            ani.SetBool("Walking", false);
+            ani.SetBool("Running", false);
 
 
         }
