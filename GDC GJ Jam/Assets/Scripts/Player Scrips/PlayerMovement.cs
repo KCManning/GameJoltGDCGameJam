@@ -2,9 +2,9 @@
 using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
-    bool canJump = false;
+    //bool canJump = false;
     Quaternion originalRotation;
-    bool isOnGround = false;
+   // bool isOnGround = false;
     float RelativeX = 0;
     float RelativeZ = 0;
     public float speed;
@@ -21,27 +21,28 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
+        
+        bool canJump = Physics.Raycast(transform.position, Vector3.down,0.2f);
+        //Debug.DrawRay(transform.position, Vector3.down*10,Color.green);
+        bool isOnGround = canJump;
+
         bool noKey = true;
         bool noRightKey = true;
         //get rigid body
         Rigidbody body = GetComponent<Rigidbody>();
-        
-        //check to see if the player can jump
-        if(canJump && Input.GetKey(KeyCode.Space))
-        {
-            Vector3 up = new Vector3(0, 1, 0);
-            body.AddForce(up * 200, ForceMode.Acceleration);
-            canJump = false;
-            
 
-        }
+        Animator ani = GetComponent<Animator>();
         if(Input.GetKey(KeyCode.A)&& isOnGround)
         {
             RelativeX = -speed;
             //rotate the player
             transform.rotation = originalRotation;
-            transform.Rotate(new Vector3(0, 0, 180));
+            transform.Rotate(new Vector3(0, 180, 0));
             noKey = false;
+            ani.SetBool("Walking",true);
+
+
         }
         
 
@@ -53,9 +54,23 @@ public class PlayerMovement : MonoBehaviour {
             transform.rotation = originalRotation;
             //transform.Rotate(new Vector3(0, 0, 0));
             noKey = false;
+            ani.SetBool("Walking", true);
+
         }
 
-        if(noKey && isOnGround)
+        //check to see if the player can jump
+        if (canJump && Input.GetKey(KeyCode.Space))
+        {
+            Vector3 up = new Vector3(0, 1, 0);
+            body.AddForce(up * 250, ForceMode.Acceleration);
+            canJump = false;
+            ani.SetBool("Jumping", true);
+            ani.SetBool("Walking", false);
+
+
+        }
+
+        if (noKey && isOnGround)
         {
             //set the relative x to 0
             RelativeX = 0;
@@ -89,6 +104,7 @@ public class PlayerMovement : MonoBehaviour {
         if(isOnGround && noRightKey)
         {
             RelativeZ = 0;
+            //ani.SetBool("Idle", true);
         }
         
 
@@ -115,8 +131,8 @@ public class PlayerMovement : MonoBehaviour {
     {
         if(col.collider.tag =="JumpableSurface")
         {
-            canJump = true;
-            isOnGround = true;
+      //      canJump = true;
+        //    isOnGround = true;
         }
     }
 
@@ -125,8 +141,8 @@ public class PlayerMovement : MonoBehaviour {
         if(col.collider.tag == "JumpableSurface")
         {
             //player is no longer colliding with the ground so prevent him from jumping
-            canJump = false;
-            isOnGround = false;
+        //    canJump = false;
+           // isOnGround = false;
         }
     }
 
