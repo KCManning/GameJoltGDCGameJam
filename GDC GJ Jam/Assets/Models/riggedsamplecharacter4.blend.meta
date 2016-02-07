@@ -156,6 +156,7 @@ ModelImporter:
     100296: rig
     100298: //RootNode
     100300: root
+    100302: JoeRig
     400000: DEF-chest
     400002: DEF-f_index_01_L_01
     400004: DEF-f_index_01_L_02
@@ -307,6 +308,7 @@ ModelImporter:
     400296: rig
     400298: //RootNode
     400300: root
+    400302: JoeRig
     4300000: Joe4
     7400000: Default Take
     9500000: //RootNode
