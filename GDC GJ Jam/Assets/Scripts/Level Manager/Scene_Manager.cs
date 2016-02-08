@@ -29,5 +29,10 @@ public class Scene_Manager : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player" || other.tag == "Weapon")
+            LoadNextScene();
+    }
 
 }
