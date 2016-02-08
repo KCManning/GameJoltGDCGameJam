@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 89880262dc38b464e94bf11cd462ff0c
-timeCreated: 1454826887
+timeCreated: 1454898050
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -1299,13 +1299,13 @@ ModelImporter:
     4300002: LoinCloth
     4300004: Kanoa
     7400000: rig|Attack
-    7400002: rig|Idle
-    7400004: rig|Jump
-    7400006: rig|T-Pose
-    7400008: rig|Walk
-    7400010: rig|Death
-    7400012: rig|LeftStep
-    7400014: rig|RightStep
+    7400002: rig|Death
+    7400004: rig|Idle
+    7400006: rig|Jump
+    7400008: rig|LeftStep
+    7400010: rig|RightStep
+    7400012: rig|T-Pose
+    7400014: rig|Walk
     9500000: //RootNode
     13700000: Kanoa
   materials:

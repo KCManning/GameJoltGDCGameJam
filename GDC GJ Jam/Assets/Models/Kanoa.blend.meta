@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9c3f131cfa983e7409a65044b4db6320
-timeCreated: 1454811656
+timeCreated: 1454898057
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -329,17 +329,11 @@ ModelImporter:
     resampleRotations: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: '
-
-      Imported file ''Kanoa'' conversion failed: Required human bone ''Hips'' not
-      found
-
-
-'
+    animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -383,7 +377,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

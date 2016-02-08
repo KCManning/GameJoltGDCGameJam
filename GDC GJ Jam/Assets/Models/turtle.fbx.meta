@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ed0756620846b2547a06a0423c3374df
-timeCreated: 1454798047
+timeCreated: 1454898063
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,101 +9,100 @@ ModelImporter:
     100002: body
     100004: f_foot.L
     100006: f_foot.L_end
-    100008: f_foot.R
-    100010: f_foot.R_end
-    100012: f_IK.L
-    100014: f_IK.R
-    100016: f_leg.L
-    100018: f_leg.L_end
-    100020: f_leg.R
-    100022: f_leg.R_end
-    100024: l_jaw
-    100026: l_jaw_base
-    100028: l_jaw_end
-    100030: lower_neck
-    100032: r_foot.L
-    100034: r_foot.L_end
-    100036: r_foot.R
-    100038: r_foot.R_end
-    100040: r_IK.L
-    100042: r_IK.R
-    100044: r_leg.L
-    100046: r_leg.L_end
-    100048: r_leg.R
-    100050: r_leg.R_end
-    100052: tail_base
-    100054: tail_mid
-    100056: tail_tip
-    100058: tail_tip_end
-    100060: Tortoise
-    100062: //RootNode
-    100064: u_jaw
-    100066: u_jaw_base
-    100068: u_jaw_end
-    100070: upper_neck
-    100072: f_foot.L_end_end
-    100074: f_foot.R_end_end
-    100076: f_leg.L_end_end
-    100078: f_leg.R_end_end
-    100080: l_jaw_end_end
-    100082: r_foot.L_end_end
-    100084: r_foot.R_end_end
-    100086: r_leg.L_end_end
-    100088: r_leg.R_end_end
-    100090: tail_tip_end_end
-    100092: u_jaw_end_end
+    100008: f_foot.L_end_end
+    100010: f_foot.R
+    100012: f_foot.R_end
+    100014: f_foot.R_end_end
+    100016: f_IK.L
+    100018: f_IK.R
+    100020: f_leg.L
+    100022: f_leg.L_end
+    100024: f_leg.L_end_end
+    100026: f_leg.R
+    100028: f_leg.R_end
+    100030: f_leg.R_end_end
+    100032: l_jaw
+    100034: l_jaw_base
+    100036: l_jaw_end
+    100038: l_jaw_end_end
+    100040: lower_neck
+    100042: r_foot.L
+    100044: r_foot.L_end
+    100046: r_foot.L_end_end
+    100048: r_foot.R
+    100050: r_foot.R_end
+    100052: r_foot.R_end_end
+    100054: r_IK.L
+    100056: r_IK.R
+    100058: r_leg.L
+    100060: r_leg.L_end
+    100062: r_leg.L_end_end
+    100064: r_leg.R
+    100066: r_leg.R_end
+    100068: r_leg.R_end_end
+    100070: tail_base
+    100072: tail_mid
+    100074: tail_tip
+    100076: tail_tip_end
+    100078: tail_tip_end_end
+    100080: Tortoise
+    100082: //RootNode
+    100084: u_jaw
+    100086: u_jaw_base
+    100088: u_jaw_end
+    100090: u_jaw_end_end
+    100092: upper_neck
     400000: Armature
     400002: body
     400004: f_foot.L
     400006: f_foot.L_end
-    400008: f_foot.R
-    400010: f_foot.R_end
-    400012: f_IK.L
-    400014: f_IK.R
-    400016: f_leg.L
-    400018: f_leg.L_end
-    400020: f_leg.R
-    400022: f_leg.R_end
-    400024: l_jaw
-    400026: l_jaw_base
-    400028: l_jaw_end
-    400030: lower_neck
-    400032: r_foot.L
-    400034: r_foot.L_end
-    400036: r_foot.R
-    400038: r_foot.R_end
-    400040: r_IK.L
-    400042: r_IK.R
-    400044: r_leg.L
-    400046: r_leg.L_end
-    400048: r_leg.R
-    400050: r_leg.R_end
-    400052: tail_base
-    400054: tail_mid
-    400056: tail_tip
-    400058: tail_tip_end
-    400060: Tortoise
-    400062: //RootNode
-    400064: u_jaw
-    400066: u_jaw_base
-    400068: u_jaw_end
-    400070: upper_neck
-    400072: f_foot.L_end_end
-    400074: f_foot.R_end_end
-    400076: f_leg.L_end_end
-    400078: f_leg.R_end_end
-    400080: l_jaw_end_end
-    400082: r_foot.L_end_end
-    400084: r_foot.R_end_end
-    400086: r_leg.L_end_end
-    400088: r_leg.R_end_end
-    400090: tail_tip_end_end
-    400092: u_jaw_end_end
+    400008: f_foot.L_end_end
+    400010: f_foot.R
+    400012: f_foot.R_end
+    400014: f_foot.R_end_end
+    400016: f_IK.L
+    400018: f_IK.R
+    400020: f_leg.L
+    400022: f_leg.L_end
+    400024: f_leg.L_end_end
+    400026: f_leg.R
+    400028: f_leg.R_end
+    400030: f_leg.R_end_end
+    400032: l_jaw
+    400034: l_jaw_base
+    400036: l_jaw_end
+    400038: l_jaw_end_end
+    400040: lower_neck
+    400042: r_foot.L
+    400044: r_foot.L_end
+    400046: r_foot.L_end_end
+    400048: r_foot.R
+    400050: r_foot.R_end
+    400052: r_foot.R_end_end
+    400054: r_IK.L
+    400056: r_IK.R
+    400058: r_leg.L
+    400060: r_leg.L_end
+    400062: r_leg.L_end_end
+    400064: r_leg.R
+    400066: r_leg.R_end
+    400068: r_leg.R_end_end
+    400070: tail_base
+    400072: tail_mid
+    400074: tail_tip
+    400076: tail_tip_end
+    400078: tail_tip_end_end
+    400080: Tortoise
+    400082: //RootNode
+    400084: u_jaw
+    400086: u_jaw_base
+    400088: u_jaw_end
+    400090: u_jaw_end_end
+    400092: upper_neck
     4300000: Tortoise
-    7400000: Armature|ArmatureAction
-    7400002: Armature|Armature|Armature|ArmatureAction|Armature|ArmatureAction
-    7400004: Armature|Death
-    7400006: Armature|Death.001
+    7400000: Armature|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+    7400002: Armature|Death
+    7400004: Armature|Death.001
     9500000: //RootNode
     13700000: Tortoise
   materials:
@@ -126,373 +125,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Armature|Armature|Armature|ArmatureAction|Armature|ArmatureAction
-      takeName: Armature|Armature|Armature|ArmatureAction|Armature|ArmatureAction
-      firstFrame: 0
-      lastFrame: 60
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Armature
-        weight: 1
-      - path: Armature/body
-        weight: 1
-      - path: Armature/body/lower_neck
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end/l_jaw_end_end
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end/u_jaw_end_end
-        weight: 1
-      - path: Armature/f_IK.L
-        weight: 1
-      - path: Armature/f_IK.L/f_foot.L
-        weight: 1
-      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end
-        weight: 1
-      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end/f_foot.L_end_end
-        weight: 1
-      - path: Armature/f_IK.R
-        weight: 1
-      - path: Armature/f_IK.R/f_foot.R
-        weight: 1
-      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end
-        weight: 1
-      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end/f_foot.R_end_end
-        weight: 1
-      - path: Armature/f_leg.L
-        weight: 1
-      - path: Armature/f_leg.L/f_leg.L_end
-        weight: 1
-      - path: Armature/f_leg.L/f_leg.L_end/f_leg.L_end_end
-        weight: 1
-      - path: Armature/f_leg.R
-        weight: 1
-      - path: Armature/f_leg.R/f_leg.R_end
-        weight: 1
-      - path: Armature/f_leg.R/f_leg.R_end/f_leg.R_end_end
-        weight: 1
-      - path: Armature/r_IK.L
-        weight: 1
-      - path: Armature/r_IK.L/r_foot.L
-        weight: 1
-      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end
-        weight: 1
-      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end/r_foot.L_end_end
-        weight: 1
-      - path: Armature/r_IK.R
-        weight: 1
-      - path: Armature/r_IK.R/r_foot.R
-        weight: 1
-      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end
-        weight: 1
-      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end/r_foot.R_end_end
-        weight: 1
-      - path: Armature/r_leg.L
-        weight: 1
-      - path: Armature/r_leg.L/r_leg.L_end
-        weight: 1
-      - path: Armature/r_leg.L/r_leg.L_end/r_leg.L_end_end
-        weight: 1
-      - path: Armature/r_leg.R
-        weight: 1
-      - path: Armature/r_leg.R/r_leg.R_end
-        weight: 1
-      - path: Armature/r_leg.R/r_leg.R_end/r_leg.R_end_end
-        weight: 1
-      - path: Armature/tail_base
-        weight: 1
-      - path: Armature/tail_base/tail_mid
-        weight: 1
-      - path: Armature/tail_base/tail_mid/tail_tip
-        weight: 1
-      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end
-        weight: 1
-      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end/tail_tip_end_end
-        weight: 1
-      - path: Tortoise
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Death
-      takeName: Armature|Death
-      firstFrame: 0
-      lastFrame: 39
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Armature
-        weight: 1
-      - path: Armature/body
-        weight: 1
-      - path: Armature/body/lower_neck
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end/l_jaw_end_end
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end/u_jaw_end_end
-        weight: 1
-      - path: Armature/f_IK.L
-        weight: 1
-      - path: Armature/f_IK.L/f_foot.L
-        weight: 1
-      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end
-        weight: 1
-      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end/f_foot.L_end_end
-        weight: 1
-      - path: Armature/f_IK.R
-        weight: 1
-      - path: Armature/f_IK.R/f_foot.R
-        weight: 1
-      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end
-        weight: 1
-      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end/f_foot.R_end_end
-        weight: 1
-      - path: Armature/f_leg.L
-        weight: 1
-      - path: Armature/f_leg.L/f_leg.L_end
-        weight: 1
-      - path: Armature/f_leg.L/f_leg.L_end/f_leg.L_end_end
-        weight: 1
-      - path: Armature/f_leg.R
-        weight: 1
-      - path: Armature/f_leg.R/f_leg.R_end
-        weight: 1
-      - path: Armature/f_leg.R/f_leg.R_end/f_leg.R_end_end
-        weight: 1
-      - path: Armature/r_IK.L
-        weight: 1
-      - path: Armature/r_IK.L/r_foot.L
-        weight: 1
-      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end
-        weight: 1
-      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end/r_foot.L_end_end
-        weight: 1
-      - path: Armature/r_IK.R
-        weight: 1
-      - path: Armature/r_IK.R/r_foot.R
-        weight: 1
-      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end
-        weight: 1
-      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end/r_foot.R_end_end
-        weight: 1
-      - path: Armature/r_leg.L
-        weight: 1
-      - path: Armature/r_leg.L/r_leg.L_end
-        weight: 1
-      - path: Armature/r_leg.L/r_leg.L_end/r_leg.L_end_end
-        weight: 1
-      - path: Armature/r_leg.R
-        weight: 1
-      - path: Armature/r_leg.R/r_leg.R_end
-        weight: 1
-      - path: Armature/r_leg.R/r_leg.R_end/r_leg.R_end_end
-        weight: 1
-      - path: Armature/tail_base
-        weight: 1
-      - path: Armature/tail_base/tail_mid
-        weight: 1
-      - path: Armature/tail_base/tail_mid/tail_tip
-        weight: 1
-      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end
-        weight: 1
-      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end/tail_tip_end_end
-        weight: 1
-      - path: Tortoise
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Death.001
-      takeName: Armature|Death.001
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Armature
-        weight: 1
-      - path: Armature/body
-        weight: 1
-      - path: Armature/body/lower_neck
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/l_jaw_base/l_jaw/l_jaw_end/l_jaw_end_end
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end
-        weight: 1
-      - path: Armature/body/lower_neck/upper_neck/u_jaw_base/u_jaw/u_jaw_end/u_jaw_end_end
-        weight: 1
-      - path: Armature/f_IK.L
-        weight: 1
-      - path: Armature/f_IK.L/f_foot.L
-        weight: 1
-      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end
-        weight: 1
-      - path: Armature/f_IK.L/f_foot.L/f_foot.L_end/f_foot.L_end_end
-        weight: 1
-      - path: Armature/f_IK.R
-        weight: 1
-      - path: Armature/f_IK.R/f_foot.R
-        weight: 1
-      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end
-        weight: 1
-      - path: Armature/f_IK.R/f_foot.R/f_foot.R_end/f_foot.R_end_end
-        weight: 1
-      - path: Armature/f_leg.L
-        weight: 1
-      - path: Armature/f_leg.L/f_leg.L_end
-        weight: 1
-      - path: Armature/f_leg.L/f_leg.L_end/f_leg.L_end_end
-        weight: 1
-      - path: Armature/f_leg.R
-        weight: 1
-      - path: Armature/f_leg.R/f_leg.R_end
-        weight: 1
-      - path: Armature/f_leg.R/f_leg.R_end/f_leg.R_end_end
-        weight: 1
-      - path: Armature/r_IK.L
-        weight: 1
-      - path: Armature/r_IK.L/r_foot.L
-        weight: 1
-      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end
-        weight: 1
-      - path: Armature/r_IK.L/r_foot.L/r_foot.L_end/r_foot.L_end_end
-        weight: 1
-      - path: Armature/r_IK.R
-        weight: 1
-      - path: Armature/r_IK.R/r_foot.R
-        weight: 1
-      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end
-        weight: 1
-      - path: Armature/r_IK.R/r_foot.R/r_foot.R_end/r_foot.R_end_end
-        weight: 1
-      - path: Armature/r_leg.L
-        weight: 1
-      - path: Armature/r_leg.L/r_leg.L_end
-        weight: 1
-      - path: Armature/r_leg.L/r_leg.L_end/r_leg.L_end_end
-        weight: 1
-      - path: Armature/r_leg.R
-        weight: 1
-      - path: Armature/r_leg.R/r_leg.R_end
-        weight: 1
-      - path: Armature/r_leg.R/r_leg.R_end/r_leg.R_end_end
-        weight: 1
-      - path: Armature/tail_base
-        weight: 1
-      - path: Armature/tail_base/tail_mid
-        weight: 1
-      - path: Armature/tail_base/tail_mid/tail_tip
-        weight: 1
-      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end
-        weight: 1
-      - path: Armature/tail_base/tail_mid/tail_tip/tail_tip_end/tail_tip_end_end
-        weight: 1
-      - path: Tortoise
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
